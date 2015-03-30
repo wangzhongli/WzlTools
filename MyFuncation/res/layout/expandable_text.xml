@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F1F1F1" />
+
+    <com.example.car591_android.customView.ExpandableTextView
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        expandableTextView:animAlphaStart="1"
+        expandableTextView:maxCollapsedLines="1" >
+
+        <TextView
+            android:id="@+id/expandable_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/expand_collapse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+    </com.example.car591_android.customView.ExpandableTextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F1F1F1" />
+
+</LinearLayout>
